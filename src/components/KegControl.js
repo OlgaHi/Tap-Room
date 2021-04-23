@@ -30,17 +30,17 @@ class KegControl extends React.Component {
   
   //add new keg into array
   handleAddingNewKegToList = (newKeg) => {
-    const newMasterKegtList = this.state.masterKegList.concat(newKeg);
+    const newMasterKegList = this.state.masterKegList.concat(newKeg);
     this.setState({
-      masterKegList: newMasterKegtList,
+      masterKegList: newMasterKegList,
       formVisibleOnPage: false 
     });
   }
   
   //select a keg
   handleSelectedKeg = (id) => {
-    const selectedKeg = this.state.masterTicketList.filter(keg => keg.id === id)[0];
-    this.setState({selectedTicket: selectedKeg});
+    const selectedKeg = this.state.masterKegList.filter(keg => keg.id === id)[0];
+    this.setState({selectedKeg: selectedKeg});
   }
 
 
