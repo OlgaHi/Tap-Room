@@ -48,7 +48,7 @@ function NewKegForm(props){
 }
 
 NewKegForm.propTypes = {
-  onNewTicketCreation: PropTypes.func
+  onNewKegCreation: PropTypes.func
 };
 
 export default NewKegForm;
