@@ -1,6 +1,7 @@
 import React from "react";
 import { v4 } from 'uuid';
 import PropTypes from "prop-types";
+import ReusableForm from "./ReusableForm";
 
 function NewKegForm(props){
 
@@ -19,30 +20,9 @@ function NewKegForm(props){
   return (
     <React.Fragment>
       <h3>Add a new keg:</h3>
-      <form onSubmit={handleNewKegFormSubmission}>
-        <input
-          type='text'
-          name='name'
-          placeholder='Name' />
-        <input
-          type='text'
-          name='brand'
-          placeholder='Brand' />
-        <input
-          type='number'
-          name='price'
-          placeholder='Price' />
-        <input
-          type='text'
-          name='abv'
-          placeholder='Alcohol Content' />
-        <input
-          type='number'
-          name='pintsLeft'
-          placeholder='Quantity' />
-        
-        <button type='submit'>Add</button>
-      </form>
+      <ReusableForm 
+        formSubmissionHandler={handleNewKegFormSubmission}
+        buttonText="Add" />
     </React.Fragment>
   );
 }
