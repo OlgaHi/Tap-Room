@@ -6,7 +6,9 @@ function App(){
   return (
     <React.Fragment>
       <Header />
-      <KegControl />
+      <div className="container">
+        <KegControl />
+      </div>
     </React.Fragment>
   )
 }
