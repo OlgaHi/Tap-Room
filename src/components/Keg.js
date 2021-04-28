@@ -19,7 +19,7 @@ function Keg(props){
               margin: "3% 1% 3%",
               fontSize: "200%",
               backgroundColor: "hsla(20,33%, 25%, 0.60)",
-            }}><h3>Pints left: {props.pintsLeft}</h3></p>
+            }}><span>Pints left: {props.pintsLeft}</span></p>
       </div>
       <button className="btn btn-secondary" onClick = {() => props.whenSellClicked(props.id)}>Sell</button>
       <hr/>
